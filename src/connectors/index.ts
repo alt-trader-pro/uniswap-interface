@@ -8,12 +8,18 @@ import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
 import UNISWAP_LOGO_URL from '../assets/svg/logo.svg'
 
-const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
-const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
-const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
+const CHAIN_ID="3"
+const NETWORK_ID="ropsten"
+const NETWORK_URL = "https://ropsten.infura.io/v3/057e7293dcd0418794e3d226e5844cee"
+const PORTIS_ID = "b0dbb7ff-8c4d-4472-890c-dcebcde9f6e4"
+const FORMATIC_KEY = "pk_live_F937DF033A1666BF"
+
+// const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
+// const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
+// const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
 const WALLETCONNECT_BRIDGE_URL = process.env.REACT_APP_WALLETCONNECT_BRIDGE_URL
 
-export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1')
+export const NETWORK_CHAIN_ID: number = parseInt(CHAIN_ID ?? '1')
 
 if (typeof NETWORK_URL === 'undefined') {
   throw new Error(`REACT_APP_NETWORK_URL must be a defined environment variable`)
