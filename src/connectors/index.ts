@@ -9,7 +9,6 @@ import { NetworkConnector } from './NetworkConnector'
 import UNISWAP_LOGO_URL from '../assets/svg/logo.svg'
 
 const CHAIN_ID="3"
-const NETWORK_ID="ropsten"
 const NETWORK_URL = "https://ropsten.infura.io/v3/057e7293dcd0418794e3d226e5844cee"
 const PORTIS_ID = "b0dbb7ff-8c4d-4472-890c-dcebcde9f6e4"
 const FORMATIC_KEY = "pk_live_F937DF033A1666BF"
